@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f0f8ff;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US States Guessing Game</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
 </head>
 <body>
-
-    <h1>It Works! 🚀</h1>
-    <p>My website is successfully deployed on GitHub Pages.</p>
-
+  <div class="container">
+    <h1 class="title">Geo-Guesser</h1>
+    <div id="question" class="question">Loading game...</div>
+    <svg id="us-map" width="5000" height="5000"></svg>
+    <div id="score" class="score">Score: </div>
+    <button id="restart" class="btn hidden">Restart Game</button>
+  </div>
+  <script src="static/script.js"></script>
 </body>
 </html>
